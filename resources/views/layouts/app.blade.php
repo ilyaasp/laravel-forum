@@ -50,6 +50,11 @@
                                 </a>
                             </li>
                         @endauth
+                        <li class="nav-item">
+                            <a href="{{route('discussions.index')}}" class="nav-link">
+                                <strong>Discussions</strong>
+                            </a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
