@@ -52,7 +52,7 @@
                         @endauth
                         <li class="nav-item">
                             <a href="{{route('discussions.index')}}" class="nav-link">
-                                <strong>Discussions</strong>
+                                <strong>Discussions All</strong>
                             </a>
                         </li>
                     </ul>
@@ -111,7 +111,9 @@
                                 <ul class="list-group">
                                     @foreach ($channels as $channel)
                                         <li class="list-group-item">
-                                            {{$channel->name}}
+                                            <a href="{{route('discussions.index')}}?channel={{$channel->slug}}">
+                                                {{$channel->name}}
+                                            </a>
                                         </li>
                                     @endforeach
                                 </ul>
